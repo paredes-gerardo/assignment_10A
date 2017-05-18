@@ -1,0 +1,45 @@
+<!-- Gerardo Paredes -->
+<!-- Assignment 10.B -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>change text</title>
+    <!-- Imports the Jquery library is declared here from google -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Script declared here -->
+    <script>
+        $(document).ready(function(){//Specifies the function to run after the document is loaded
+            $("#btn1").click(function(){//this function here enables button 1, when clicked to append text to the
+                                        //to the end of the paragraph element.
+                $("p").append(" <b>Appended text</b>.");//here we are selecting the p tag and appending the text.
+            });
+            $("#btn2").click(function(){//here we specify a function for the second btn, where the function allows
+                                        //NEW ITEMS <li>'s to be appended to the ordered list.
+                $("ol").append("<li>Appended item</li>");//here we select the ordered list and append the new items to
+                                                        //end of the list.
+            });
+        });
+    </script>
+</head>
+<body>
+
+<!-- two paragraphs declared here -->
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+
+<!-- ordered list with a set of items is declared here -->
+<ol>
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
+</ol>
+
+<!-- two buttons declared here with #id's two be used in the jquery functions above -->
+<button id="btn1">Append text</button> <!-- This button appends text to the end of the paragraph -->
+<button id="btn2">Append list item</button> <!-- This button appends an item to the end of the ordered list -->
+
+
+</body>
+</html>

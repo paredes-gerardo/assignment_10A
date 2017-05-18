@@ -1,0 +1,19 @@
+body{
+    background-color: #8097A1;
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: 8px;
+}
+
+div{
+    position: relative;
+    left: 21%;
+    padding-bottom: 20px;
+
+}
+
+button{
+    position: relative;
+    float: left;
+    height: 30px;
+}

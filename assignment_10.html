@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 10</title>
+    <!-- A stylesheet is declared here -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Imports the Jquery library is declared here from google -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){//Specifies the function to run after the document is loaded
+            $("button").click(function(){//here we select the button element in our document, if the button is clicked
+                                        //the function will animate the div element and its font size.
+                var div = $("div");//here we select and declare our div element as a variable.
+                div.animate({fontSize: '100px'}, "slow");//using our div variable, next we use the jquery animate method
+                                                        //in order to resize the div's font size.
+            });//using the animate method , we declare its parameters as changing the divs font size to 100 pixels and
+        });     //transitioning the animation slow.
+    </script>
+<body>
+
+<!-- the button used to start the animation is declared here. -->
+<button>Start Animation</button>
+
+<!-- a div container is declared here-->
+<div style="background:#007EB2;height:100px;width:800px;position:absolute;">Hello &mdash; World</div>
+
+    </body>
+</html>
